@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'HkGhVkhmcBwVLHk6Lm2iZRDQ3boIo9Q5',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -121,7 +121,14 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
+            
+            /* Additional Providers */
+        'Zizaco\Confide\ServiceProvider', // Confide Provider
+        'Zizaco\Entrust\EntrustServiceProvider', // Entrust Provider for roles
+        'Barryvdh\Debugbar\ServiceProvider', // Debugger
+        'yajra\Datatables\DatatablesServiceProvider', // Datatables
+        'Way\Generators\GeneratorsServiceProvider',
+         'Maatwebsite\Excel\ExcelServiceProvider',
 	),
 
 	/*
@@ -188,6 +195,15 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+            
+            /* Additional Aliases */
+        'Confide'         => 'Zizaco\Confide\Facade', // Confide Alias
+        'Entrust'         => 'Zizaco\Entrust\EntrustFacade', // Entrust Alias
+        'String'          => 'Andrew13\Helpers\String', // String
+        'Carbon'          => 'Carbon\Carbon', // Carbon
+        'Datatables'      => 'yajra\Datatables\Datatables', // DataTables
+        'Debugbar' 		  => 'Barryvdh\Debugbar\Facade', // Debugger
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel', //excel or csv export&import
 
 	),
 
