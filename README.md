@@ -4,4 +4,4 @@ Zaye is going to be online marketplace for sellers who can actually create their
 
 ### Contributing To Zaye
 **We are using larave [laravel/framework](http://github.com/laravel/framework) as main backend framework.**
-**AngularJS for enhanced user experience [angular/angular.js](http://github.com/angular/angular.js). **
+**AngularJS for enhanced user experience [angular/angular.js](http://github.com/angular/angular.js).**
